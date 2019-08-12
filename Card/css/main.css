@@ -1,0 +1,43 @@
+
+html {
+    font-size: 62.5%;
+    }
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+.card{
+    margin:1rem auto;
+    width:29rem;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.2);
+    border-radius:.1rem;
+    overflow:hidden;
+}
+.card:hover{
+   box-shadow: 0 0.3rem 1.8rem rgba(0, 0, 0, 0.6);
+}
+.card .RufusCls{
+    height:20rem;
+    width:29rem;
+}
+.card .container{
+    text-indent:1.6rem;
+    margin: 2rem 0 0 0;
+}
+.card .container h4{
+    font-weight:600;
+    font-size:1.5rem;
+    color:#0F5EF0;
+    margin-bottom:1.8rem;
+}
+.card .container .content1{
+    font-weight:700;
+    font-size: 1.2rem;
+    color:#7A8594;
+    margin-bottom:2rem;
+}
+.card .container .content2{
+    font-weight:400;
+    font-size: 1.2rem;
+    color:#7A8594;
+    margin-bottom:1.4rem;
+}

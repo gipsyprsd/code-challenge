@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myListApp">
+
+<head>
+<link href="../common/css/reset.css" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="css/main.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="listctrl.js"></script>
+
+</head>
+
+
+<body ng-controller="myListCtrl">
+
+<div id="mainContent" >
+
+<div ng-view></div>
+</div>
+
+<script type="text/ng-template" id="table.html">
+  <table>
+      <tr >
+       <th ng-click="sort('name')">Product Name <span ng-class="sortClass('name')"></span></th>
+       <th ng-click="sort('price')">Price <span ng-class="sortClass('price')"></span></th>
+       <th ng-click="sort('category')">Category <span ng-class="sortClass('category')"></span></th>
+      </tr>
+      <tr ng-repeat='item in listItems|orderBy:orderByField:reverse' ng-class-odd="'oddCls'">
+       <td>{{item.name}}</td>
+       <td>{{item.price}}</td>
+       <td>{{item.category}}</td>
+      </tr>
+     </table>
+</script>
+
+</body>
+</html>

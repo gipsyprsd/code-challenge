@@ -1,0 +1,53 @@
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: 1rem auto;
+    width: 40%;
+    border: solid 1px #e3e3e3;
+}
+
+.container form{
+    margin:4rem;
+}
+.container form .formgrp{
+    margin-bottom:2rem;
+}
+
+.container form .formgrp label{
+    display:inline-block;
+    font-size:1.2rem;
+    font-weight:400;
+    color:#221F4D;
+    margin-bottom:.2rem;
+}
+
+.container form .formgrp input{
+    width:100%;
+    height:3rem;
+    opacity:0.5;
+    font-size:1.2rem;
+    font-weight:400;
+    color:#221F4D;
+    box-sizing: border-box;
+    text-indent:1rem;
+    
+}
+
+.container form .btnCls{
+    width:100%;
+    height:3rem;
+    color:#fff;
+    font-size:1.2rem;
+    background-color:#0F5EF0;
+    border:none;
+    margin-top:1rem;
+    display:inline-block;
+}
+.container form .btnCls:hover{
+    background-color:#0C4BC0;
+}

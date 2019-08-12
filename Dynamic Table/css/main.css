@@ -1,0 +1,73 @@
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*table */
+
+#mainContent{
+    margin:1rem auto;
+    width:60%;     
+}
+#mainContent table{
+    border-collapse: collapse; 
+    width:100%;
+    border: double 1px #E5EBF1;  
+   }
+   #mainContent table th,#mainContent table td{
+    padding: 3px;
+    text-align:left;
+    text-indent:1.5rem;
+    padding:10px 0;
+   }
+   #mainContent table th{
+    background-color: #CBD6E2;
+    border-right: solid 1px #7691AC;
+    position:relative;
+    width:20%;
+    font-weight: 600;
+    font-size:1.2rem;
+   }
+   #mainContent table th:first-child{
+       width:50%
+   }
+   #mainContent table th:last-child{
+       border-right:none;
+       width:30%;
+    }
+   #mainContent table th span{
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    right:1.5rem;
+    top:1.3rem;
+   }
+
+   #mainContent table tr td{
+    font-weight: 400;
+    font-size:1.2rem;
+   }
+   #mainContent table th .upArrow{
+    border-bottom: 5px solid #1F1C4C;
+   }
+   #mainContent table th .downArrow{
+    border-top: 5px solid #1F1C4C;
+   }
+   #mainContent table th .downArrowDisable{
+    border-top: 5px solid #767A97;
+   }
+   #mainContent table tr{
+       box-sizing: border-box;
+       border: 1px solid transparent;
+            
+   }
+   #mainContent table tr.oddCls{
+       background-color:#F5F8FA;
+   }
+   #mainContent table tr:hover{
+    background-color:#E7EFFD;
+    border: 1px double #0F5EF0;
+}
